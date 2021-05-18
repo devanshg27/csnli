@@ -1,6 +1,13 @@
 CSNLI
 =====
 
+*Fork of* |repo|_ *for python 3.6.*
+``lang_tag_example.py`` *shows an example script using three-step decoding.*
+
+.. _repo: https://github.com/irshadbhat/csnli/
+
+.. |repo| replace:: *csnli*
+
 ----
 
 Neural language identification and normalisation in code switching data tailored with a three-step decoding process
@@ -10,7 +17,9 @@ Requirements
 
 ::
 
-    pip install -r requirements.txt
+    conda create --name <env_name> python=3.6
+    conda activate <env_name>
+    pip install -r requirements_36.txt
     python build_viterbi.py build_ext --inplace
     
 Download models from `csnli-models`_.
@@ -47,7 +56,6 @@ Three Step Decoding
     situation   situation   en
     hai है   hi
     yar यार  hi
-
 
 Language Identification
 ^^^^^^^^^^^^^^^^^^^^^^^
