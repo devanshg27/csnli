@@ -9,7 +9,7 @@ import codecs
 import string
 import argparse
 from itertools import count
-from StringIO import StringIO
+from io import StringIO
 
 import opts
 import onmt
